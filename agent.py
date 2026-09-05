@@ -15,7 +15,7 @@ def run_agentic_flow(user_prompt: str) -> dict:
     
     # Step 2: Read the number typed by the user in the prompt text
     # A simple string search checks if the user typed common digits
-    for count in ["2", "3", "4", "5", "10", "20", "50"]:
+    for count in ["50", "20", "10", "5", "4", "3", "2"]:
         if count in user_prompt:
             quantity = int(count)
             break
